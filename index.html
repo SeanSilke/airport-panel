@@ -15,6 +15,11 @@
         </tr>
     </script>
 
+    <input type="checkbox" data-bind="click: filter, checked: showArrival">
+    <label>Arrival</label>
+    <input type="checkbox" data-bind="click: filter, checked: showDeparture">
+    <label>Departure</label>
+
     <table id="table-main" class="table table-highlight-all">
         <thead>
         <tr>

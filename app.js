@@ -189,9 +189,32 @@ $(document).ready(function () {
 
     var viewModel = kendo.observable({
         displayList: [ ],
+        showArrival: true,
+        showDeparture: true,
         clickShowRow: function () {
             console.log("!!!clickShowRow")
+        },
+        filter: function (e) {
+            var showArrival = this.get("showArrival")
+            var showDeparture = this.get("showDeparture")
+            var newflightsArray = []
+
+            if (showArrival && showDeparture) {
+                newflightsArray = flightsArray
+            }
+            else if (showArrival) {
+                newflightsArray = flightsArray.filter(function (e) {
+                    return e.type == "Arrival"
+                })
+            } else if (showDeparture) {
+                newflightsArray = flightsArray.filter(function (e) {
+                    return e.type == "Departure"
+                })
+            }
+
+            this.set("displayList", newflightsArray)
         }
+
     });
 
     kendo.bind($("#main"), viewModel);
