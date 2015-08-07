@@ -13,6 +13,13 @@
             <td>#: type #</td>
             <td>#: flight #</td>
             <td>#: airlines #</td>
+            <td>#: log #</td>
+            <td>#: aircraft #</td>
+            <td>#: airport #</td>
+            <td>#: depTime #</td>
+            <td>#: arrTime #</td>
+            <td>#: status #</td>
+            <td>#: comment #</td>
         </tr>
     </script>
 
@@ -27,6 +34,13 @@
             <th> Type</th>
             <th> Flight</th>
             <th> Airlines</th>
+            <th> Logo</th>
+            <th> Aircraft</th>
+            <th> Airport</th>
+            <th> Departure time</th>
+            <th> Arrival time</th>
+            <th> Status</th>
+            <th> Comment</th>
         </tr>
         </thead>
         <tbody data-bind="source: displayList"
@@ -44,20 +58,55 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h4 class="modal-title">Flight details</h4>
                 </div>
-                <div class="modal-body">
-                    <table class="table table-highlight-all">
-                        <thead>
+
+                <script type="text/x-kendo-template" id="modal-table">
+                    <table style="width:100%">
                         <tr>
-                            <th> Type</th>
-                            <th> Flight</th>
-                            <th> Airlines</th>
+                            <th>Type:</th>
+                            <td>#: type #</td>
                         </tr>
-                        </thead>
-                        <tbody data-bind="source: selectedList"
-                               data-template="table-template-row">
-                        </tbody>
+                        <tr>
+                            <th>Flight:</th>
+                            <td>#: flight #</td>
+                        </tr>
+                        <tr>
+                            <th>Airlines:</th>
+                            <td>#: airlines #</td>
+                        </tr>
+                        <tr>
+                            <th>Logo:</th>
+                            <td>#: log #</td>
+                        </tr>
+                        <tr>
+                            <th>Aircraft:</th>
+                            <td>#: aircraft #</td>
+                        </tr>
+                        <tr>
+                            <th>Airport:</th>
+                            <td>#: airport #</td>
+                        </tr>
+                        <tr>
+                            <th>Departure time:</th>
+                            <td>#: depTime #</td>
+                        </tr>
+                        <tr>
+                            <th> Arrival time:</th>
+                            <td>#: arrTime #</td>
+                        </tr>
+                        <tr>
+                            <th>Status:</th>
+                            <td>#: status #</td>
+                        </tr>
+                        <tr>
+                            <th>Comment:</th>
+                            <td>#: comment #</td>
+                        </tr>
                     </table>
-                </div>
+                </script>
+
+
+                <div data-bind="source: selectedList"
+                     data-template="modal-table"></div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>

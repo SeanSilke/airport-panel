@@ -48,6 +48,6 @@
 
 #header-fixed {
     position: fixed;
-    top: 0px; display:none;
+    top: 0; display:none;
     background-color:white;
 }

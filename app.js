@@ -13,9 +13,11 @@ $(document).ready(function () {
             $.each($header.find('tr > th'), function (ind, val) {
                 var original_width = $(val).width();
                 var original_padding = $(val).css("padding");
+                var original_border = $(val).css("border");
                 $($fixedHeader.find('tr > th')[ind])
                     .width(original_width)
-                    .css("padding", original_padding);
+                    .css("padding", original_padding)
+                    .css("border", original_border);
             });
         }
         else if (offset < tableOffset) {
@@ -27,163 +29,327 @@ $(document).ready(function () {
         {
             type: "Departure",
             flight: "AA 403",
-            airlines: "American Airlines" },
-
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
+        },
         {
             type: "Arrival",
             flight: "UA 243",
-            airlines: "United Airlines"
-        },
-        {
-            type: "Arrival",
-            flight: "AlA 352",
-            airlines: "Alaska Airlines"
-        },
-        {
-            type: "Departure",
-            flight: "UsA 345",
-            airlines: "US Airways"
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
         },
         {
             type: "Departure",
             flight: "AA 403",
-            airlines: "American Airlines" },
-
-        {
-            type: "Arrival",
-            flight: "UrA 243",
-            airlines: "Ural Airlines"
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
         },
-        {
-            type: "Arrival",
-            flight: "AlA 352",
-            airlines: "Alaska Airlines"
-        },
-        {
-            type: "Departure",
-            flight: "UsA 345",
-            airlines: "US Airways"
-        },
-        {
-            type: "Departure",
-            flight: "AA 403",
-            airlines: "American Airlines" },
-
         {
             type: "Arrival",
             flight: "UA 243",
-            airlines: "United Airlines"
-        },
-        {
-            type: "Arrival",
-            flight: "AlA 352",
-            airlines: "Alaska Airlines"
-        },
-        {
-            type: "Departure",
-            flight: "UsA 345",
-            airlines: "US Airways"
-        },
-        {
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
             type: "Departure",
             flight: "AA 403",
-            airlines: "American Airlines" },
-
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
+        },
         {
             type: "Arrival",
             flight: "UA 243",
-            airlines: "United Airlines"
-        },
-        {
-            type: "Arrival",
-            flight: "AlA 352",
-            airlines: "Alaska Airlines"
-        },
-        {
-            type: "Departure",
-            flight: "UsA 345",
-            airlines: "US Airways"
-        },
-        {
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
             type: "Departure",
             flight: "AA 403",
-            airlines: "American Airlines" },
-
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
+        },
         {
             type: "Arrival",
             flight: "UA 243",
-            airlines: "United Airlines"
-        },
-        {
-            type: "Arrival",
-            flight: "AlA 352",
-            airlines: "Alaska Airlines"
-        },
-        {
-            type: "Departure",
-            flight: "UsA 345",
-            airlines: "US Airways"
-        },
-        {
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
             type: "Departure",
             flight: "AA 403",
-            airlines: "American Airlines" },
-
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
+        },
         {
             type: "Arrival",
             flight: "UA 243",
-            airlines: "United Airlines"
-        },
-        {
-            type: "Arrival",
-            flight: "AlA 352",
-            airlines: "Alaska Airlines"
-        },
-        {
-            type: "Departure",
-            flight: "UsA 345",
-            airlines: "US Airways"
-        },
-        {
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
             type: "Departure",
             flight: "AA 403",
-            airlines: "American Airlines" },
-
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
+        },
         {
             type: "Arrival",
             flight: "UA 243",
-            airlines: "United Airlines"
-        },
-        {
-            type: "Arrival",
-            flight: "AlA 352",
-            airlines: "Alaska Airlines"
-        },
-        {
-            type: "Departure",
-            flight: "UsA 345",
-            airlines: "US Airways"
-        },
-        {
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
             type: "Departure",
             flight: "AA 403",
-            airlines: "American Airlines" },
-
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
+        },
         {
             type: "Arrival",
             flight: "UA 243",
-            airlines: "United Airlines"
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
+            type: "Departure",
+            flight: "AA 403",
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
         },
         {
             type: "Arrival",
-            flight: "AlA 352",
-            airlines: "Alaska Airlines"
+            flight: "UA 243",
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
+            type: "Departure",
+            flight: "AA 403",
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
         },
         {
+            type: "Arrival",
+            flight: "UA 243",
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
             type: "Departure",
-            flight: "UsA 345",
-            airlines: "US Airways"
-        }
+            flight: "AA 403",
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
+        },
+        {
+            type: "Arrival",
+            flight: "UA 243",
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
+            type: "Departure",
+            flight: "AA 403",
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
+        },
+        {
+            type: "Arrival",
+            flight: "UA 243",
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
+            type: "Departure",
+            flight: "AA 403",
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
+        },
+        {
+            type: "Arrival",
+            flight: "UA 243",
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
+            type: "Departure",
+            flight: "AA 403",
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
+        },
+        {
+            type: "Arrival",
+            flight: "UA 243",
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },        {
+            type: "Departure",
+            flight: "AA 403",
+            airlines: "American Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "SVO",
+            depTime: "23:02",
+            arrTime: "01:15",
+            status:"Landed",
+            comment:"no comment"
+        },
+        {
+            type: "Arrival",
+            flight: "UA 243",
+            airlines: "United Airlines",
+            log: "no log",
+            aircraft: "Boing 733",
+            airport: "DME",
+            depTime: "21:31",
+            arrTime: "16:22",
+            status:"In-flight",
+            comment:"no comment"
+        },
 
     ]
 
