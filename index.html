@@ -1,22 +1,26 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <title>Airport panel</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 <div id="main">
 
     <script type="text/x-kendo-template" id="table-template-row">
         <tr data-bind="click: clickShowRow">
-            <td>#: name #</td>
-            <td>#: surname #</td>
+            <td>#: type #</td>
+            <td>#: flight #</td>
+            <td>#: airlines #</td>
         </tr>
     </script>
 
-    <table>
+    <table class="table table-highlight-all">
         <thead>
         <tr>
-            <th> Столбец один</th>
-            <th> Столбец два</th>
+            <th> Type</th>
+            <th> Flight</th>
+            <th> Airlines</th>
         </tr>
         </thead>
         <tbody data-bind="source: displayList"
