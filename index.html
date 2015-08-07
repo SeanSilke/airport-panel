@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <title>Airport panel</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/modal.css" type="text/css">
 </head>
 <body>
 <div id="main">
@@ -35,9 +36,39 @@
 
     <table id="header-fixed" class="table"></table>
 
+    <!-- Modal HTML -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Flight details</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-highlight-all">
+                        <thead>
+                        <tr>
+                            <th> Type</th>
+                            <th> Flight</th>
+                            <th> Airlines</th>
+                        </tr>
+                        </thead>
+                        <tbody data-bind="source: selectedList"
+                               data-template="table-template-row">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://kendo.cdn.telerik.com/2015.2.805/js/kendo.all.min.js"></script>
 <script src="app.js"></script>
+<script src="js/modal.js"></script>
 </body>
 </html>

@@ -187,12 +187,16 @@ $(document).ready(function () {
 
     ]
 
+    var modal = $("#main").find('.modal');
+
     var viewModel = kendo.observable({
         displayList: [ ],
+        selectedList: [],
         showArrival: true,
         showDeparture: true,
-        clickShowRow: function () {
-            console.log("!!!clickShowRow")
+        clickShowRow: function (e) {
+            this.set("selectedList", e.data)
+            modal.modal();
         },
         filter: function (e) {
             var showArrival = this.get("showArrival")
