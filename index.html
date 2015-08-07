@@ -1,8 +1,32 @@
-<html>
-    <head>
-    </head>
-    <body>
-        <script src="app.js">
-        </script>
-    </body>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<div id="main">
+
+    <script type="text/x-kendo-template" id="table-template-row">
+        <tr data-bind="click: clickShowRow">
+            <td>#: name #</td>
+            <td>#: surname #</td>
+        </tr>
+    </script>
+
+    <table>
+        <thead>
+        <tr>
+            <th> Столбец один</th>
+            <th> Столбец два</th>
+        </tr>
+        </thead>
+        <tbody data-bind="source: displayList"
+               data-template="table-template-row">
+        </tbody>
+    </table>
+
+</div>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://kendo.cdn.telerik.com/2015.2.805/js/kendo.all.min.js"></script>
+<script src="app.js"></script>
+</body>
 </html>
