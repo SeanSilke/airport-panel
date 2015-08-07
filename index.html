@@ -10,16 +10,16 @@
 
     <script type="text/x-kendo-template" id="table-template-row">
         <tr data-bind="click: clickShowRow">
-            <td>#: type #</td>
+            <td class="hidden-xs">#: type #</td>
             <td>#: flight #</td>
-            <td>#: airlines #</td>
-            <td>#: log #</td>
-            <td>#: aircraft #</td>
+            <td class="hidden-md">#: airlines #</td>
+            <td class="hidden-xs">#: log #</td>
+            <td class="hidden-sm">#: aircraft #</td>
             <td>#: airport #</td>
-            <td>#: depTime #</td>
-            <td>#: arrTime #</td>
-            <td>#: status #</td>
-            <td>#: comments #</td>
+            <td class="hidden-sm">#: depTime #</td>
+            <td class="hidden-sm">#: arrTime #</td>
+            <td >#: status #</td>
+            <td class="hidden-md">#: comments #</td>
         </tr>
     </script>
 
@@ -31,16 +31,16 @@
     <table id="table-main" class="table table-highlight-all">
         <thead>
         <tr>
-            <th> Type</th>
+            <th class="hidden-xs"> Type</th>
             <th> Flight</th>
-            <th> Airlines</th>
-            <th> Logo</th>
-            <th> Aircraft</th>
+            <th class="hidden-md"> Airlines</th>
+            <th class="hidden-xs"> Airlines logo</th>
+            <th class="hidden-sm"> Aircraft</th>
             <th> Airport</th>
-            <th> Departure time</th>
-            <th> Arrival time</th>
-            <th> Status</th>
-            <th> Comments</th>
+            <th class="hidden-sm"> Departure time</th>
+            <th class="hidden-sm"> Arrival time</th>
+            <th > Status</th>
+            <th class="hidden-md"> Comments</th>
         </tr>
         </thead>
         <tbody data-bind="source: displayList"
