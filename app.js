@@ -35,8 +35,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -47,8 +47,8 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
+            status: "In-flight",
+            comments: "no comments"
         },
         {
             type: "Departure",
@@ -59,8 +59,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -71,9 +71,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -82,8 +83,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -94,9 +95,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -105,8 +107,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -117,9 +119,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -128,8 +131,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -140,9 +143,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -151,8 +155,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -163,9 +167,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -174,8 +179,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -186,9 +191,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -197,8 +203,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -209,9 +215,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -220,8 +227,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -232,9 +239,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -243,8 +251,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -255,9 +263,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -266,8 +275,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -278,9 +287,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -289,8 +299,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -301,9 +311,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -312,8 +323,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -324,9 +335,10 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
-        },        {
+            status: "In-flight",
+            comments: "no comments"
+        },
+        {
             type: "Departure",
             flight: "AA 403",
             airlines: "American Airlines",
@@ -335,8 +347,8 @@ $(document).ready(function () {
             airport: "SVO",
             depTime: "23:02",
             arrTime: "01:15",
-            status:"Landed",
-            comment:"no comment"
+            status: "Landed",
+            comments: "no comments"
         },
         {
             type: "Arrival",
@@ -347,8 +359,8 @@ $(document).ready(function () {
             airport: "DME",
             depTime: "21:31",
             arrTime: "16:22",
-            status:"In-flight",
-            comment:"no comment"
+            status: "In-flight",
+            comments: "no comments"
         },
 
     ]
